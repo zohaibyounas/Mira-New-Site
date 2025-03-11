@@ -1,16 +1,17 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+//import { Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
+
 import { useTranslation } from "react-i18next";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Services from "./pages/Services";
 import Blogs from "./pages/Blogs"; // NEW IMPORT
 import Contact from "./pages/Contact";
-import  PrivacyPolicy from "./pages/PrivacyPolicy";
-import  Imprint from "./pages/Imprint";
-import  GTCs from "./pages/GTCs";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import Imprint from "./pages/Imprint";
+import GTCs from "./pages/GTCs";
 // import Impressions from "./pages/Impressions";
-
 
 function App() {
   const { t } = useTranslation();
@@ -25,7 +26,6 @@ function App() {
       <Route path="/imprint" element={<Imprint />} />
       <Route path="/gtcs" element={<GTCs />} />
       {/* <Route path="/impressions" element={<Impressions />} /> */}
-  
     </Routes>
   );
 }
