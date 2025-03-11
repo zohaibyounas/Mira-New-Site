@@ -30,15 +30,18 @@ const ContactForm = () => {
 
     emailjs
       .send(
-       "service_y6zacem", // Your EmailJS Service ID
+        // eslint-disable-next-line no-irregular-whitespace
+        "service_y6zacem", // Your EmailJS Service ID
+        // eslint-disable-next-line no-irregular-whitespace
         "template_ig2kqbj", // Your EmailJS Template ID
         templateParams,
-       "rBlvscRL_SXhmKHx2" // Your EmailJS Public Key
+        // eslint-disable-next-line no-irregular-whitespace
+        "rBlvscRL_SXhmKHx2" // Your EmailJS Public Key
       )
       .then(
         (result) => {
           console.log("Email sent:", result.text);
-          toast.success("✅ Message Sent Successfully!");
+          toast.success("✅ Query Submitted Successfully");
           setStatusMessage("");
           reset(); // Clears form after submission
         },

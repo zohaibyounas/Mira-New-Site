@@ -38,7 +38,7 @@ const ContactUs = () => {
       .then(
         (result) => {
           console.log("Email sent:", result.text);
-          toast.success("✅ Email sent successfully!"); // Show success toast
+          toast.success("✅ Query Submitted Successfully"); // Show success toast
           setFormData({ name: "", email: "", message: "" }); // Clear form after sending
         },
         (error) => {

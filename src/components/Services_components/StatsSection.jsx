@@ -14,35 +14,7 @@ const StatsSection = () => {
     { id: 4, value: 890, label: t("PROJECTS SPEND"), prefix: "$", suffix: "K" },
   ];
 
-  return (
-    <section className="stats-section">
-      <motion.div
-        className="stats-grid"
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        viewport={{ once: true }}
-      >
-        {stats.map((stat) => (
-          <motion.div
-            key={stat.id}
-            className="stat-card"
-            whileHover={{ scale: 1.1 }}
-          >
-            <CountUp
-              start={0}
-              end={stat.value}
-              duration={3}
-              separator=","
-              prefix={stat.prefix || ""}
-              suffix={stat.suffix || ""}
-            />
-            <p>{stat.label}</p>
-          </motion.div>
-        ))}
-      </motion.div>
-    </section>
-  );
+  return <div className=""></div>;
 };
 
 export default StatsSection;

@@ -12,28 +12,33 @@ const Testimonials = () => {
 
   const testimonials = [
     {
-      quote: t("Mira Elektronikentwicklung UG delivered high-quality V5 firmware and sleep monitoring solutions with precision, innovation, and reliability."),
+      quote: t(
+        "Mira Elektronikentwicklung UG delivered high-quality V5 firmware and sleep monitoring solutions with precision, innovation, and reliability."
+      ),
       rating: 4.5,
       name: t("Rustam Ismailov"),
       designation: t("Managing Director"),
-      image: "/images/partner4.png",
+      image: "/images/partner1.png",
     },
     {
-      quote: t("Mira Elektronikentwicklung excels in Embedded Systems and FPGA technology, delivering outstanding results with expertise and dedication."),
+      quote: t(
+        "Mira Elektronikentwicklung excels in Embedded Systems and FPGA technology, delivering outstanding results with expertise and dedication."
+      ),
       rating: 4.5,
       name: t("Hans Wegener"),
       designation: t("Sr. Software Engineer"),
       image: "/images/partner5.png",
     },
     {
-      quote: t("Sypheon Online's team brought our vision to life with expertise in web-based multiplayer gaming and blockchain integration, ensuring smooth gameplay."),
+      quote: t(
+        "Sypheon Online's team brought our vision to life with expertise in web-based multiplayer gaming and blockchain integration, ensuring smooth gameplay."
+      ),
       rating: 4.5,
       name: t("Ferruh Danaci"),
       designation: t("Product Owner"),
-      image: "/images/partner1.png",
+      image: "/images/partner4.png",
     },
   ];
-
   return (
     <section className="testimonials">
       <h3 className="testimonials-heading">{t("TESTIMONIALS")}</h3>
