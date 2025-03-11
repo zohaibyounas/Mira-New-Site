@@ -1,23 +1,32 @@
 import React from "react";
 import "./Hero.css";
+import { FaGlobe, FaCog, FaBatteryFull, FaCar } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 const Hero = () => {
-  
   const { t } = useTranslation();
   return (
     <div className="hero-container">
       <div className="overlay"></div>
       <div className="content">
         <h1>
-        {t("High-Quality")} <br />
-        {t("Embedded Engineering")} {t("For")} {t("solving your challenges in")} <span className="highlight"> {t("technology")}</span> {t("&")}<span className="highlight"> {t("innovation")}</span></h1>
+          {t("High-Quality")} <br />
+          {t("Embedded Engineering")} {t("For")}{" "}
+          {t("solving your challenges in")}{" "}
+          <span className="highlight"> {t("technology")}</span> {t("&")}
+          <span className="highlight"> {t("innovation")}</span>
+        </h1>
         <p className="subtitle">
-          {t("Whoever drives innovation, like life itself, moves forward with determination.")}
-          <br />{t("The future belongs to those who create it.")}
-
+          {t(
+            "Whoever drives innovation, like life itself, moves forward with determination."
+          )}
+          <br />
+          {t("The future belongs to those who create it.")}
         </p>
         <div className="subscription">
-          <input type="email" placeholder={t("Enter your email for latest tech news")} />
+          <input
+            type="email"
+            placeholder={t("Enter your email for latest tech news")}
+          />
           <button>{t("Subscribe")}</button>
         </div>
         {/* <ul className="features">
@@ -32,18 +41,24 @@ const Hero = () => {
           </li>
         </ul> */}
         <div className="experts">
-          <p>{t("EXPERT IN:")}</p>
+          <p>EXPERT IN:</p>
           <div className="logos">
-            <span>🌍 {t("Mira Embedded")}|</span>
-            <span>⚙ {t("Industrial Automation")} |</span>
-            <span>🔋 {t("Smart Energy ")}|</span>
-            <span>🚗 {t("Advanced Engineering")}
+            <span className="icons">
+              <FaGlobe className="icons" size={20} /> Mira Embedded |
             </span>
-            {/* <span>🔗 PIXON</span> */}
+            <span className="icons">
+              <FaCog className="icons" size={20} /> Industrial Automation |
+            </span>
+            <span className="icons">
+              <FaBatteryFull className="icons" size={20} /> Smart Energy |
+            </span>
+            <span className="icons">
+              <FaCar className="icons" size={20} /> Advanced Engineering
+            </span>
           </div>
         </div>
       </div>
-    </div >
+    </div>
   );
-}
+};
 export default Hero;

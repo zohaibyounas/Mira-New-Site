@@ -11,6 +11,16 @@
   padding: 2rem;
   color: white;
 }
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding-top: 2px;
+  gap: 6px;
+
+  font-family: sans-serif;
+}
 
 /* Dark Overlay */
 .overlay {
@@ -40,7 +50,7 @@ h1 {
 
 /* Highlighted Text */
 .highlight {
-  color: #007BFF;
+  color: #007bff;
 }
 
 /* Subtitle */
@@ -69,7 +79,7 @@ h1 {
 
 .subscription button {
   padding: 10px 15px;
-  background: #007BFF;
+  background: #007bff;
   color: white;
   border: none;
   border-radius: 0 5px 5px 0;
@@ -100,9 +110,11 @@ h1 {
 /* Logos */
 .logos {
   display: flex;
+  /* justify-content: center; */
+
   gap: 15px;
-  margin-top: 20px;
-  font-size: 1rem;
+  margin-top: 24px;
+  font-size: 0.9rem;
   gap: 20px;
 }
 
@@ -221,7 +233,7 @@ h1 {
     font-size: 0.9rem;
   }
 
-  .subscription input, 
+  .subscription input,
   .subscription button {
     font-size: 0.9rem;
   }
@@ -250,75 +262,74 @@ h1 {
     font-size: 0.8rem;
   }
   /* Extra Small Screens (250px - 300px) */
-@media screen and (max-width: 300px) {
-  .hero-container {
-    padding: 2rem 1rem;
-    height: auto;
-    text-align: center;
-  }
+  @media screen and (max-width: 300px) {
+    .hero-container {
+      padding: 2rem 1rem;
+      height: auto;
+      text-align: center;
+    }
 
-  .content {
-    margin-top: 5%;
-    max-width: 100%;
-    margin-right: 0;
-  }
+    .content {
+      margin-top: 5%;
+      max-width: 100%;
+      margin-right: 0;
+    }
 
-  h1 {
-    font-size: 1.2rem;
-    line-height: 30px;
-    margin-top: 2%;
-  }
+    h1 {
+      font-size: 1.2rem;
+      line-height: 30px;
+      margin-top: 2%;
+    }
 
-  .subtitle {
-    font-size: 0.8rem;
-  }
+    .subtitle {
+      font-size: 0.8rem;
+    }
 
-  .subscription {
-    flex-direction: column;
-    align-items: center;
-    padding-right: 0;
-    width: 100%;
-  }
+    .subscription {
+      flex-direction: column;
+      align-items: center;
+      padding-right: 0;
+      width: 100%;
+    }
 
-  .subscription input {
-    width: 100%;
-    font-size: 0.85rem;
-    padding: 8px;
-    border-radius: 5px;
-    margin-bottom: 8px;
-  }
+    .subscription input {
+      width: 100%;
+      font-size: 0.85rem;
+      padding: 8px;
+      border-radius: 5px;
+      margin-bottom: 8px;
+    }
 
-  .subscription button {
-    width: 40%;
-    font-size: 0.85rem;
-    padding: 8px;
-    border-radius: 5px;
-  }
+    .subscription button {
+      width: 40%;
+      font-size: 0.85rem;
+      padding: 8px;
+      border-radius: 5px;
+    }
 
-  .features {
-    text-align: center;
-    padding: 0;
-  }
+    .features {
+      text-align: center;
+      padding: 0;
+    }
 
-  .features li {
-    font-size: 0.8rem;
-  }
+    .features li {
+      font-size: 0.8rem;
+    }
 
-  .experts {
-    margin-top: 5%;
-    text-align: center;
-  }
+    .experts {
+      margin-top: 5%;
+      text-align: center;
+    }
 
-  .experts p {
-    font-size: 0.9rem;
-  }
+    .experts p {
+      font-size: 0.9rem;
+    }
 
-  .logos {
-    flex-wrap: wrap;
-    justify-content: center;
-    font-size: 0.8rem;
-    gap: 8px;
+    .logos {
+      flex-wrap: wrap;
+      justify-content: center;
+      font-size: 0.8rem;
+      gap: 8px;
+    }
   }
-}
-
 }
