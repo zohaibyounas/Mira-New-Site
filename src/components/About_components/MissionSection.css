@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   padding: 60px 10%;
-  background: #F4F4F4;
+  background: #f4f4f4;
   color: black;
   gap: 50px;
 }
@@ -15,25 +15,31 @@
   display: flex;
   justify-content: flex-start;
   margin-left: -6%;
+
+  margin-top: 80px;
 }
 
 /* Blue Background Box */
 .blue-background {
   background: #007bff;
-  border-radius: 20px;
-  padding: 15px;
-  height: 250px;
+  border-radius: 25px;
+  padding: 10px;
+  height: 200px;
   display: inline-block;
+  /* width: -px; */
+  /* margin-bottom: -10px; */
 }
 
 /* Mission Image */
 .mission-img {
-  width: 220px;
+  width: 227px;
   height: auto;
   display: block;
   border-radius: 10px;
-  margin-left: 10%;
+  margin-left: 17%;
   margin-bottom: -7%;
+  margin-top: -165px;
+  align-items: center;
 }
 
 /* Right Side Content */
@@ -88,7 +94,6 @@
     width: 200px;
     margin-left: 0;
     margin-bottom: -5%;
-    
   }
 
   .mission-content {
