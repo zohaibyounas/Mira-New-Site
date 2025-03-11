@@ -89,14 +89,16 @@ const ContactUs = () => {
 
           {/* Right Side - Contact Info */}
           <div className="contact-info">
-            <p>
+            <p style={{ color: "black" }}>
               <em>{t("Weekend UX")}</em>
             </p>
-            <p>{t("Fleethörn 7, 24103 Kiel")}</p>
+            <p style={{ color: "black" }}>{t("Fleethörn 7, 24103 Kiel")}</p>
             <p>
-              <strong>📞 {t("+49 1522 6426128")}</strong>
+              <strong style={{ color: "black" }}>
+                📞 {t("+49 1522 6426128")}
+              </strong>
             </p>
-            <p>📧 {t("info@mira-ee.de")}</p>
+            <p style={{ color: "black" }}>📧 {t("info@mira-ee.de")}</p>
 
             {/* Social Media Icons */}
             <div className="social-icons">
