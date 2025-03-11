@@ -1,7 +1,5 @@
 import React from "react";
-//import { Routes, Route } from "react-router-dom";
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
-
+import { Routes, Route } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import Home from "./pages/Home";
 import About from "./pages/About";
