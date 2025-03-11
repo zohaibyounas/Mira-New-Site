@@ -1,0 +1,148 @@
+/* Blogs Section */
+.blogs {
+    text-align: center;
+    padding: 60px 5%;
+    background: black;
+    color: white;
+  }
+  
+  /* Heading */
+  .blogs-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 40px;
+  }
+  
+  /* Blogs Container */
+  .blogs-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 1100px;
+    margin: auto;
+  }
+  
+  /* Blog Card */
+  .blog-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .blog-card:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Alternate Alignment */
+  .blog-card.left {
+    flex-direction: row;
+  }
+  
+  .blog-card.right {
+    flex-direction: row-reverse;
+  }
+  
+  /* Blog Image */
+  .blog-image {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Blog Content */
+  .blog-content {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .blog-date {
+    font-size: 0.9rem;
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  .blog-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 5px 0;
+  }
+  
+  .blog-description {
+    font-size: 0.95rem;
+    color: #bbb;
+    margin-bottom: 10px;
+  }
+  
+  /* Tags */
+  .blog-tags {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .blog-tag {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+  }
+  
+  /* Tag Colors */
+  .blog-tag.research {
+    background: #ff77d3;
+    color: white;
+  }
+  
+  .blog-tag.ui-ux,
+  .blog-tag.ui-design {
+    background: #9acaff;
+    color: white;
+  }
+  
+  .blog-tag.programming {
+    background: #ffb444;
+    color: black;
+  }
+  
+  .blog-tag.developments {
+    background: #ff4d4d;
+    color: white;
+  }
+  
+  /* View More Button */
+  .view-more {
+    background: #007bff;
+    color: white;
+    font-size: 1rem;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .view-more:hover {
+    background: #0056b3;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .blog-card {
+      flex-direction: column !important;
+      text-align: center;
+    }
+  
+    .blog-image {
+      width: 100%;
+    }
+  
+    .blog-content {
+      text-align: center;
+    }
+  }
+  

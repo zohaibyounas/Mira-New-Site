@@ -1,0 +1,324 @@
+/* Hero Section */
+.hero-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url("/images/hero-bg.png") no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  padding: 2rem;
+  color: white;
+}
+
+/* Dark Overlay */
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+/* Content Area */
+.content {
+  margin-top: 7%;
+  position: relative;
+  max-width: 700px;
+  z-index: 1;
+  margin-right: 35%;
+}
+
+/* Heading */
+h1 {
+  margin-top: 6%;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 45.5px;
+}
+
+/* Highlighted Text */
+.highlight {
+  color: #007BFF;
+}
+
+/* Subtitle */
+.subtitle {
+  font-size: 1rem;
+  margin-top: 10px;
+  opacity: 0.8;
+}
+
+/* Subscription Input */
+.subscription {
+  display: flex;
+  margin-top: 20px;
+  padding-right: 20%;
+  width: 600px;
+}
+
+.subscription input {
+  padding: 10px;
+  width: 100%;
+  height: auto;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  font-size: 11px;
+}
+
+.subscription button {
+  padding: 10px 15px;
+  background: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+/* Features List */
+.features {
+  margin-top: 15px;
+  list-style: none;
+  text-align: left;
+  background-color: none;
+}
+
+.features li {
+  font-size: 0.9rem;
+}
+
+/* Experts Section */
+.experts {
+  margin-top: 4%;
+}
+
+.experts p {
+  font-weight: bold;
+}
+
+/* Logos */
+.logos {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  font-size: 1rem;
+  gap: 20px;
+}
+
+/* 🔹 RESPONSIVE DESIGN */
+
+/* Large Screens (1200px & above) */
+@media screen and (max-width: 1200px) {
+  .content {
+    margin-right: 20%;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+    line-height: 40px;
+  }
+
+  .subscription {
+    padding-right: 10%;
+  }
+}
+
+/* Medium Screens (Tablets & Laptops - 992px & below) */
+@media screen and (max-width: 992px) {
+  .hero-container {
+    text-align: center;
+    padding: 4rem 2rem;
+  }
+
+  .content {
+    margin-right: 0;
+    max-width: 600px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+    line-height: 38px;
+  }
+
+  .subscription {
+    justify-content: center;
+    padding-right: 0;
+  }
+  .subscription button {
+    width: 40%;
+  }
+  .subscription input {
+    width: 60%;
+  }
+
+  .logos {
+    justify-content: center;
+  }
+}
+
+/* Small Screens (Tablets & Large Phones - 768px & below) */
+@media screen and (max-width: 768px) {
+  .hero-container {
+    height: auto;
+    padding: 4rem 1rem;
+  }
+
+  .content {
+    max-width: 90%;
+    text-align: center;
+    margin-top: 5%;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+    line-height: 35px;
+  }
+
+  .subtitle {
+    font-size: 0.95rem;
+  }
+
+  .subscription {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .subscription input {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  .subscription button {
+    width: 40%;
+    border-radius: 5px;
+  }
+
+  .features {
+    text-align: center;
+  }
+
+  .logos {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* Extra Small Screens (Mobile - 576px & below) */
+@media screen and (max-width: 576px) {
+  .hero-container {
+    padding: 3rem 1rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    line-height: 32px;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+  }
+
+  .subscription input, 
+  .subscription button {
+    font-size: 0.9rem;
+  }
+  .subscription button {
+    width: 40%;
+  }
+
+  .logos {
+    font-size: 0.9rem;
+    gap: 10px;
+  }
+}
+
+/* Ultra Small Screens (400px & below) */
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 1.3rem;
+    line-height: 30px;
+  }
+
+  .subscription {
+    width: 100%;
+  }
+
+  .logos {
+    font-size: 0.8rem;
+  }
+  /* Extra Small Screens (250px - 300px) */
+@media screen and (max-width: 300px) {
+  .hero-container {
+    padding: 2rem 1rem;
+    height: auto;
+    text-align: center;
+  }
+
+  .content {
+    margin-top: 5%;
+    max-width: 100%;
+    margin-right: 0;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+    line-height: 30px;
+    margin-top: 2%;
+  }
+
+  .subtitle {
+    font-size: 0.8rem;
+  }
+
+  .subscription {
+    flex-direction: column;
+    align-items: center;
+    padding-right: 0;
+    width: 100%;
+  }
+
+  .subscription input {
+    width: 100%;
+    font-size: 0.85rem;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 8px;
+  }
+
+  .subscription button {
+    width: 40%;
+    font-size: 0.85rem;
+    padding: 8px;
+    border-radius: 5px;
+  }
+
+  .features {
+    text-align: center;
+    padding: 0;
+  }
+
+  .features li {
+    font-size: 0.8rem;
+  }
+
+  .experts {
+    margin-top: 5%;
+    text-align: center;
+  }
+
+  .experts p {
+    font-size: 0.9rem;
+  }
+
+  .logos {
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 0.8rem;
+    gap: 8px;
+  }
+}
+
+}

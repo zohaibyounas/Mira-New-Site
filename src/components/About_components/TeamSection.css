@@ -1,0 +1,150 @@
+/* Team Section */
+.team-section {
+    text-align: center;
+    padding: 60px 5%;
+    background: #F4F4F4;
+    color: black;
+  }
+  
+  /* Section Title */
+  .team-subtitle {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #007bff;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  
+  .team-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .highlight {
+    color: #007bff;
+  }
+  
+  .team-description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  
+  /* Team Grid Layout */
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  
+  /* Team Card */
+  .team-card {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .team-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .team-img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .team-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .team-role {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 15px;
+  }
+  
+  /* Social Icons */
+  .team-socials {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .social-icon {
+    font-size: 1.2rem;
+    color: #007bff;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .social-icon:hover {
+    color: #0056b3;
+  }
+  
+  /* Team Footer */
+  .team-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .team-avatars {
+    display: flex;
+  }
+  
+  .avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: -8px;
+    border: 2px solid white;
+  }
+  
+  .team-request {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .request-link {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .request-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .team-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .team-grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  
+    .team-footer {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .team-avatars {
+      justify-content: center;
+    }
+  }
+  

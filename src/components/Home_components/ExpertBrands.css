@@ -1,0 +1,40 @@
+.expert-brands {
+
+    text-align: left;
+    margin-top: 100px;
+    padding: 20px 0;
+  }
+  
+  .expert-title {
+    margin-left: -830px;
+    margin-top: 90px;
+    margin-bottom: -200px;
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    /* margin-right: 100px; */
+    /* margin-bottom: 10px; */
+  }
+  
+  .brand-logos {
+    margin-top: 30px;
+    margin-left: -830px;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    gap: 40px;
+  }
+  
+  .brand-logos img {
+    max-width: 120px;
+    height: auto;
+    filter: brightness(0) invert(1); /* Makes logos white */
+    opacity: 0.9;
+    transition: 0.3s;
+  }
+  
+  .brand-logos img:hover {
+    opacity: 1;
+  }
+  

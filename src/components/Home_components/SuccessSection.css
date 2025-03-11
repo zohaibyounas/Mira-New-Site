@@ -1,0 +1,211 @@
+/* Consultation Section */
+.consultation-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 5%;
+  background: #1e3a5f;
+  color: white;
+}
+
+/* Left Side - Form */
+.consultation-form {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 350px;
+  color: black;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.consultation-form h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.consultation-form p {
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+  opacity: 0.8;
+}
+
+.consultation-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.consultation-form input,
+.consultation-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.consultation-form button {
+  background: #007bff;
+  color: white;
+  font-size: 1rem;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.consultation-form button:hover {
+  background: #0056b3;
+}
+
+/* Right Side - Business Success */
+.business-success {
+  max-width: 600px;
+}
+
+.business-success h4 {
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  color: #6db4ff;
+}
+
+.business-success h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.business-success p {
+  font-size: 1rem;
+  opacity: 0.9;
+  margin-bottom: 20px;
+}
+
+/* Stats Section */
+.stats-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.stat-box {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  /* background: rgba(255, 255, 255, 0.1); */
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.circle {
+  width: clamp(60px, 15vw, 100px);
+  height: clamp(30px, 7vw, 50px);
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  color: #0f2a4d;
+  font-weight: bold;
+  border-radius: 50%;
+  box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2);
+  margin-top: -10px;
+}
+
+p {
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  color: white;
+}
+
+/* Large Screens (1200px & above) */
+@media screen and (max-width: 1200px) {
+  .consultation-section {
+    padding: 50px 8%;
+  }
+
+  .business-success h2 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Medium Screens (Tablets & Laptops - 992px & below) */
+@media screen and (max-width: 992px) {
+  .consultation-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .consultation-form {
+    max-width: 100%;
+  }
+
+  .business-success {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+
+  .stats-container {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+  }
+}
+
+/* Small Screens (Tablets & Large Phones - 768px & below) */
+@media screen and (max-width: 768px) {
+  .consultation-section {
+    padding: 40px 5%;
+  }
+
+  .consultation-form {
+    max-width: 90%;
+  }
+
+  .business-success h2 {
+    font-size: 1.6rem;
+  }
+
+  .stats-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .stat-box {
+    justify-content: center;
+  }
+}
+
+/* Extra Small Screens (Mobile - 576px & below) */
+@media screen and (max-width: 576px) {
+  .consultation-section {
+    padding: 30px 5%;
+  }
+
+  .consultation-form {
+    padding: 25px;
+  }
+
+  .business-success h2 {
+    font-size: 1.4rem;
+  }
+}
+
+/* Ultra Small Screens (400px & below) */
+@media screen and (max-width: 400px) {
+  .consultation-section {
+    padding: 20px 5%;
+  }
+
+  .consultation-form h3 {
+    font-size: 1.3rem;
+  }
+
+  .business-success h2 {
+    font-size: 1.2rem;
+  }
+}

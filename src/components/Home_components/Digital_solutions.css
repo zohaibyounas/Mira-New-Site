@@ -1,0 +1,231 @@
+/* Timeline Section */
+.timeline {
+  text-align: center;
+  padding: 50px 5%;
+  background: #F4F4F4;
+  margin-top: 0px;
+  /* width: 100%; */
+}
+
+/* Section Titles */
+.timeline-subtitle {
+  color: #007bff;
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  /* margin-bottom: 10px; */
+}
+
+.timeline-title {
+  margin-top: 7px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #222;
+}
+
+.highlight {
+  color: #007bff;
+}
+
+/* Timeline Grid Container */
+.timeline-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns for desktop */
+  gap: 30px;
+  position: relative;
+  margin-top: 30px;
+  width: 100%;
+  /* height: auto; */
+  /* align-items: center; */
+  /* justify-items: center; */
+}
+
+/* Blue Timeline Line */
+.timeline-line {
+  position: absolute;
+  top: 46%;
+  left: 50%; /* Centers the line */
+  transform: translateX(-50%); /* Adjusts centering */
+  width: 80%; /* Adjust width to fit content */
+  height: 2px; /* Slightly thicker for better visibility */
+  background: #007bff;
+  z-index: 1; /* Brings it above other elements */
+  margin-top: 0px;
+  /* margin-bottom: 10px; */
+}
+/* Small Vertical Markers on Timeline */
+.timeline-marker {
+  position: absolute;
+  width: 2px;
+  height: 20px; /* Adjust height as needed */
+  background: #007bff;
+  top: -10px; /* Adjust alignment with the main line */
+}
+
+/* Trophy Icon */
+.timeline-trophy {
+  position: absolute;
+  right: -70px;
+  top: -17px;
+  font-size: 1.5rem;
+}
+
+/* Timeline Cards */
+.timeline-card {
+  width: 300px;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: left;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  /* position: relative; */
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+.timeline-card:hover {
+  transform: scale(1.05);
+  border-color: #007bff;
+  box-shadow: 0px 4px 15px rgba(0, 123, 255, 0.4);
+}
+.timeline-card.active {
+  border-color: #007bff;
+  box-shadow: 0px 4px 15px rgba(0, 123, 255, 0.6);
+}
+
+/* Top and Bottom Card Positions */
+/* .timeline-card.top {
+  transform: translateY(-20px);
+  }
+  
+  .timeline-card.bottom {
+    transform: translateY(20px);
+    } */
+    
+    /* Number with Title */
+    .timeline-number {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #007bff;
+      margin-bottom: 5px;
+    }
+    
+    .timeline-title{
+      font-size: 19px;
+      color: #222;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+.timeline-number span {
+  color: #222;
+}
+
+/* Description */
+.timeline-description {
+  /* font-size: 1rem;
+  color: #666;
+  white-space: pre-line; Keeps text formatting */
+  margin-top: 10px;
+  font-size: 16px;
+  text-align: left;
+  color: #666;
+  margin-bottom: 15px;
+  line-height: 20px;
+}
+
+/* Trophy Icon */
+/* .timeline-trophy {
+  font-size: 2.5rem;
+  position: absolute;
+  right: -40px;
+  bottom: -10px;
+} */
+
+/* Responsive Design */
+
+/* Responsive Design */
+
+/* Responsive Design */
+
+/* For Tablets (Medium Screens) */
+@media (max-width: 1024px) {
+  .timeline-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 20px;
+    /* display: none; */
+  }
+
+  .timeline-line {
+    width: 85%;
+  }
+
+  .timeline-marker {
+    height: 15px;
+  }
+
+  .timeline-card {
+    width: 280px;
+    padding: 20px;
+  }
+
+  .timeline-title {
+    font-size: 1.8rem;
+  }
+}
+
+/* For Mobile Screens */
+@media (max-width: 768px) {
+  .timeline-container {
+    display: flex;
+    flex-wrap: nowrap; /* No wrapping, enables horizontal scroll */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    scroll-snap-type: x mandatory; /* Smooth snapping effect */
+    gap: 15px;
+    padding-bottom: 20px; /* Space for scroll */
+  }
+
+  .timeline-line,
+  .timeline-trophy {
+    display: none; /* Hide line and trophy on small screens */
+  }
+
+  .timeline-card {
+    flex: 0 0 80%; /* Make each card take 80% width */
+    scroll-snap-align: center; /* Snap each card into view */
+    width: auto;
+    padding: 15px;
+    text-align: center;
+    white-space: normal; /* Ensure text wraps properly */
+  }
+
+  .timeline-title {
+    font-size: 1.6rem;
+  }
+
+  .timeline-description {
+    font-size: 0.95rem;
+    text-align: center;
+  }
+}
+
+/* Smallest Screens (Phones) */
+@media (max-width: 480px) {
+  .timeline-card {
+    flex: 0 0 90%; /* Increase width for better view on small screens */
+    padding: 10px;
+  }
+
+  .timeline-title {
+    font-size: 1.4rem;
+  }
+
+  .timeline-description {
+    font-size: 0.9rem;
+  }
+  .timeline-line,
+  .timeline-trophy {
+    display: none; /* Hide line and trophy on small screens */
+  }
+}
+

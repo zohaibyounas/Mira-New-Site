@@ -1,0 +1,166 @@
+/* Mission Section */
+.mission-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 10%;
+  background: #F4F4F4;
+  color: black;
+  gap: 50px;
+}
+
+/* Left Side Image */
+.mission-image {
+  flex: 0.5;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: -6%;
+}
+
+/* Blue Background Box */
+.blue-background {
+  background: #007bff;
+  border-radius: 20px;
+  padding: 15px;
+  height: 250px;
+  display: inline-block;
+}
+
+/* Mission Image */
+.mission-img {
+  width: 220px;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  margin-left: 10%;
+  margin-bottom: -7%;
+}
+
+/* Right Side Content */
+.mission-content {
+  flex: 0.7;
+  text-align: left;
+  margin-left: 10%;
+}
+
+.mission-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.mission-content p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  max-width: 100%;
+}
+
+/* 🔹 RESPONSIVE DESIGN */
+
+/* Large Screens (1200px & above) */
+@media screen and (max-width: 1200px) {
+  .mission-section {
+    padding: 50px 8%;
+    gap: 40px;
+  }
+
+  .mission-title {
+    font-size: 1.6rem;
+  }
+}
+
+/* Medium Screens (Tablets & Laptops - 992px & below) */
+@media screen and (max-width: 992px) {
+  .mission-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 5%;
+  }
+
+  .mission-image {
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  .mission-img {
+    width: 200px;
+    margin-left: 0;
+    margin-bottom: -5%;
+    
+  }
+
+  .mission-content {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .mission-title {
+    font-size: 1.5rem;
+  }
+
+  .mission-content p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Small Screens (Tablets & Large Phones - 768px & below) */
+@media screen and (max-width: 768px) {
+  .mission-section {
+    padding: 40px 5%;
+  }
+
+  .mission-image {
+    width: 180px;
+    display: none;
+  }
+
+  .mission-title {
+    font-size: 1.4rem;
+  }
+
+  .mission-content p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Extra Small Screens (Mobile - 576px & below) */
+@media screen and (max-width: 576px) {
+  .mission-section {
+    padding: 30px 5%;
+  }
+
+  .mission-image {
+    width: 160px;
+    display: none;
+  }
+
+  .mission-title {
+    font-size: 1.3rem;
+  }
+
+  .mission-content p {
+    font-size: 0.85rem;
+  }
+}
+
+/* Ultra Small Screens (250px - 400px) */
+@media screen and (max-width: 400px) {
+  .mission-section {
+    padding: 20px 5%;
+  }
+
+  .mission-img {
+    width: 140px;
+    display: none;
+  }
+
+  .mission-title {
+    font-size: 1.2rem;
+  }
+
+  .mission-content p {
+    font-size: 0.8rem;
+  }
+}

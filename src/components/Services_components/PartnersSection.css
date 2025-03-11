@@ -1,0 +1,80 @@
+/* Partners Section */
+.partners-section {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #f4f4f4;
+  overflow: hidden;
+}
+
+/* Title and Heading */
+.partners-title {
+  font-size: 1.5rem;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.partners-heading {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Carousel Container */
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 20px 0;
+}
+
+/* Continuous Scrolling Animation */
+.partners-slider {
+  display: flex;
+  align-items: center;
+  width: fit-content; 
+  animation: infiniteScroll 12s linear infinite; /* Adjusted speed */
+}
+
+/* Partner Logos */
+.partner-logo {
+  width: 140px;
+  height: auto;
+  object-fit: contain;
+  margin-right: 40px; 
+  filter: none; /* Remove grayscale */
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect - Slight Zoom */
+.partner-logo:hover {
+  transform: scale(1.1);
+}
+
+/* Infinite Scrolling Keyframes */
+@keyframes infiniteScroll {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%); /* Adjusted for smooth looping */
+  }
+}
+
+/* RESPONSIVE DESIGN */
+
+/* Medium Screens (Tablets) */
+@media (max-width: 1024px) {
+  .partner-logo {
+    width: 110px;
+    margin-right: 30px;
+  }
+}
+
+/* Small Screens (Phones) */
+@media (max-width: 768px) {
+  .partner-logo {
+    width: 90px;
+    margin-right: 20px;
+  }
+}

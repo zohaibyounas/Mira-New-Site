@@ -1,0 +1,164 @@
+/* Features Section */
+.features {
+    text-align: center;
+    padding: 60px 5%;
+    background: #F4F4F4;
+    margin-top: 0px;
+  }
+  
+  /* Section Titles */
+  .features-heading {
+    margin-top: -20px;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #222;
+  }
+  
+.highlight {
+  color: #007bff;
+}
+  .features-subheading {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  /* Features Container */
+  .features-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 30px;
+    /* flex-wrap: wrap; */
+    margin-top: 30px;
+    width: 100%;
+  }
+  
+  /* Feature Cards */
+  .feature-card {
+    /* width: 300px; */
+    background: white;
+    padding: 25px;  /* Increased padding for better spacing */
+    border-radius: 12px;
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .feature-card:hover {
+    border-color: #007bff;
+    box-shadow: 0px 4px 15px rgba(0, 123, 255, 0.4);
+  }
+  
+  /* Active Card */
+  .feature-card.active {
+    border-color: #007bff;
+    box-shadow: 0px 4px 15px rgba(0, 123, 255, 0.6);
+  }
+  
+  /* Feature Icon */
+  .feature-icon {
+    width: 50px;
+    height: 50px;
+    display: flex; /* Enables flexbox */
+    align-items: center; /* Centers vertically */
+    justify-content: center; /* Centers horizontally */
+    margin: 0 auto 15px; /* Centers the icon and adds bottom margin */
+} 
+  /* Feature Title */
+  .feature-title {
+    text-align: center;
+    font-size: 19px;
+    color: #222;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 20px;
+  }
+  
+  /* Feature Description */
+  .feature-description {
+    margin-top: 10px;
+    font-size: 16px;
+    text-align: left;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  /* 🖥️ Large Screens (Default - 3 Cards in a Row) */
+@media (max-width: 1024px) {
+  .features-container {
+    grid-template-columns: repeat(2, 1fr); /* Show 2 cards per row */
+    gap: 25px; /* Adjust spacing */
+  }
+
+  .feature-card {
+    padding: 20px; /* Reduce padding */
+  }
+
+  .features-heading {
+    font-size: 1.8rem; /* Adjust heading size */
+  }
+
+  .feature-title {
+    font-size: 17px;
+  }
+
+  .feature-description {
+    font-size: 14px;
+  }
+}
+
+/* 📱 Mobile Screens (1 Card per Row - Fully Centered) */
+@media (max-width: 768px) {
+  .features-container {
+    grid-template-columns: 1fr; /* Show 1 card per row */
+    gap: 20px;
+  }
+
+  .feature-card {
+    width: 90%; /* Take full width with some margin */
+    margin: 0 auto; /* Center the card */
+    text-align: center; /* Center text inside the card */
+    padding: 20px; /* Adjust padding */
+  }
+
+  .features-heading {
+    font-size: 1.6rem; /* Reduce heading size */
+  }
+
+  .feature-title {
+    font-size: 16px;
+  }
+
+  .feature-description {
+    font-size: 13px;
+  }
+}
+
+/* 📱 Small Mobile Screens (Extra Small Devices) */
+@media (max-width: 480px) {
+  .features {
+    padding: 40px 3%; /* Reduce padding for small screens */
+  }
+
+  .feature-card {
+    width: 100%; /* Full width for better visibility */
+    padding: 15px;
+  }
+
+  .features-heading {
+    font-size: 1.4rem; /* Reduce title size */
+  }
+
+  .feature-title {
+    font-size: 15px;
+  }
+
+  .feature-description {
+    font-size: 12px;
+  }
+}

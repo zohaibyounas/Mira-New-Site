@@ -1,0 +1,148 @@
+/* Goal Section */
+.goal-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 10%;
+  background: #F4F4F4;
+  color: black;
+  gap: 50px;
+}
+
+/* Left Side Image */
+.goal-image {
+  flex: 0.5;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: -6%;
+}
+
+.goal-img {
+  width: 290px;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+}
+
+/* Right Side Content */
+.goal-content {
+  flex: 0.7;
+  text-align: left;
+  margin-left: 10%;
+}
+
+.goal-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.goal-content p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  max-width: 100%;
+}
+
+/* 🔹 RESPONSIVE DESIGN */
+
+/* Large Screens (1200px & above) */
+@media screen and (max-width: 1200px) {
+  .goal-section {
+    padding: 50px 8%;
+    gap: 40px;
+  }
+
+  .goal-title {
+    font-size: 1.6rem;
+  }
+}
+
+/* Medium Screens (Tablets & Laptops - 992px & below) */
+@media screen and (max-width: 992px) {
+  .goal-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 5%;
+  }
+
+  .goal-image {
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  .goal-img {
+    width: 260px;
+  }
+
+  .goal-content {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .goal-title {
+    font-size: 1.5rem;
+  }
+
+  .goal-content p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Small Screens (Tablets & Large Phones - 768px & below) */
+@media screen and (max-width: 768px) {
+  .goal-section {
+    padding: 40px 5%;
+  }
+
+  .goal-img {
+    width: 240px;
+  }
+
+  .goal-title {
+    font-size: 1.4rem;
+  }
+
+  .goal-content p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Extra Small Screens (Mobile - 576px & below) */
+@media screen and (max-width: 576px) {
+  .goal-section {
+    padding: 30px 5%;
+  }
+
+  .goal-img {
+    width: 220px;
+  }
+
+  .goal-title {
+    font-size: 1.3rem;
+  }
+
+  .goal-content p {
+    font-size: 0.85rem;
+  }
+}
+
+/* Ultra Small Screens (250px - 400px) */
+@media screen and (max-width: 400px) {
+  .goal-section {
+    padding: 20px 5%;
+  }
+
+  .goal-img {
+    width: 200px;
+  }
+
+  .goal-title {
+    font-size: 1.2rem;
+  }
+
+  .goal-content p {
+    font-size: 0.8rem;
+  }
+}

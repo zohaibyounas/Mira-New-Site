@@ -1,0 +1,250 @@
+/* About Hero Section */
+.about-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 5%;
+    background: #F4F4F4;
+    color: black;
+    margin-top: 5%;
+  }
+  
+  /* Left Side Content */
+  .about-content {
+    max-width: 50%;
+  }
+  
+  .about-content h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .about-content h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin: 20px 0;
+  }
+  
+  .highlight {
+    color: #007bff;
+  }
+  
+  .about-content p {
+    font-size: 1rem;
+    color: #555;
+    max-width: 90%;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  /* Join Button */
+  .join-btn {
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    color: #007bff;
+    font-size: 1rem;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+  }
+  
+  .join-btn svg {
+    border: #007bff solid;
+    margin-left: 8px;
+  }
+  
+  .join-btn:hover {
+    border: #007bff solid;
+    background: #ffffff;
+    color: #007bff;
+    
+  }
+  
+  /* Right Side Images */
+  .about-images {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: auto;
+    margin-left: 200px;
+  }
+  
+  .image-box {
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .blue-box {
+    position: absolute;
+    width: 80%;
+    height: 60%;
+    background-color: #4a90e2;
+    z-index: -1;
+    border-radius: 10px;
+  }
+  
+  .about-img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+  }
+  
+  .image-box:first-child {
+    margin-bottom: -40px;
+    z-index: 1;
+  }
+  
+  .image-box:last-child {
+    width: 90%;
+    z-index: 2;
+  }
+  
+  
+  /* 🔹 RESPONSIVE DESIGN */
+
+/* Large Screens (1200px & above) */
+@media screen and (max-width: 1200px) {
+  .about-hero {
+    padding: 60px 5%;
+  }
+
+  .about-content h1 {
+    font-size: 3rem;
+  }
+
+  .about-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .about-images {
+    max-width: 500px;
+    margin-left: 100px;
+  }
+}
+
+/* Medium Screens (Tablets & Laptops - 992px & below) */
+@media screen and (max-width: 992px) {
+  .about-hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-content {
+    max-width: 90%;
+  }
+
+  .about-content h1 {
+    font-size: 2.8rem;
+  }
+
+  .about-content h2 {
+    font-size: 1.6rem;
+  }
+
+  .about-images {
+    max-width: 80%;
+    margin-left: 0;
+  }
+
+  .join-btn {
+    justify-content: center;
+  }
+}
+
+/* Small Screens (Tablets & Large Phones - 768px & below) */
+@media screen and (max-width: 768px) {
+  .about-hero {
+    padding: 40px 5%;
+  }
+
+  .about-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-content h2 {
+    font-size: 1.4rem;
+  }
+
+  .about-content p {
+    font-size: 0.9rem;
+  }
+
+  .about-images {
+    max-width: 90%;
+  }
+
+  .join-btn {
+    font-size: 0.9rem;
+    padding: 10px 16px;
+    margin-bottom: 20px;
+  }
+}
+
+/* Extra Small Screens (Mobile - 576px & below) */
+@media screen and (max-width: 576px) {
+  .about-hero {
+    padding: 30px 5%;
+  }
+
+  .about-content h1 {
+    font-size: 2rem;
+  }
+
+  .about-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .about-content p {
+    font-size: 0.85rem;
+  }
+
+  .about-images {
+    max-width: 100%;
+  }
+
+  .join-btn {
+    font-size: 0.85rem;
+    padding: 8px 14px;
+    margin-bottom: 20px;
+  }
+}
+
+/* Ultra Small Screens (400px & below) */
+@media screen and (max-width: 400px) {
+  .about-hero {
+    padding: 20px 5%;
+  }
+
+  .about-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .about-content h2 {
+    font-size: 1rem;
+  }
+
+  .about-content p {
+    font-size: 0.8rem;
+  }
+
+  .about-images {
+    max-width: 100%;
+  }
+
+  .join-btn {
+    font-size: 0.8rem;
+    padding: 7px 12px;
+    margin-bottom: 20px;
+  }
+}
