@@ -82,23 +82,13 @@
 /* Feature Description */
 .feature-description {
   margin-top: 10px;
-  font-size: 16px;
+  font-size: 14px;
   text-align: left;
   color: #666;
   margin-bottom: 15px;
-  margin-top: 10px !important;
-  font-size: 0.88rem !important;
-  color: #555;
-  line-height: 1.4;
-  text-align: justify; /* Justify alignment */
-  /* text-align: justify; */
-  text-justify: inter-word;
-
-  word-spacing: -3px;
-  /* margin-top: 30px; */
 }
 
-/* 🖥 Large Screens (Default - 3 Cards in a Row) */
+/* 🖥️ Large Screens (Default - 3 Cards in a Row) */
 @media (max-width: 1024px) {
   .features-container {
     grid-template-columns: repeat(2, 1fr); /* Show 2 cards per row */

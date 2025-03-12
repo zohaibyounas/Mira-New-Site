@@ -131,12 +131,11 @@
   text-align: left;
   color: #666;
   margin-bottom: 15px;
-  line-height: 20px;
   margin-top: 10px !important;
-  font-size: 0.88rem !important;
+  font-size: 14px;
   color: #555;
-  line-height: 1.4;
-  text-align: justify; /* Justify alignment */
+  line-height: 1.5;
+  /* text-align: justify; */
   /* text-align: justify; */
   text-justify: inter-word;
 
