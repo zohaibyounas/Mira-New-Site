@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
 import "./ConsentBanner.css"; // Importing the CSS file
+import { useTranslation } from "react-i18next";
 
 const ConsentBanner = () => {
+  const { t } = useTranslation();
   const [showBanner, setShowBanner] = useState(false);
   const [consent, setConsent] = useState({
     preferences: true,
@@ -60,10 +62,10 @@ const ConsentBanner = () => {
 
   return (
     <div id="cookie-banner" className="cookie-banner">
-      <p className="banner-title">
-        {
-          "Wir verwenden Cookies für ein besseres Erlebnis und Analysen. Wählen Sie Ihre Einstellungen:"
-        }
+      <p>
+        {t(
+          "We use cookies for better experience and analytics. Select your preferences:"
+        )}
       </p>
 
       <div className="checkbox-container">
