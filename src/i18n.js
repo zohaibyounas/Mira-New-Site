@@ -607,6 +607,21 @@ const resources = {
       Marketing: "Marketing",
       "Refuse All": "Alle ablehnen",
       "Accept Selection": "Auswahl akzeptieren",
+
+      //Update-Services.
+      "Tailor-made embedded solutions for industrial embedded systems and automotive embedded software, ensuring functional safety in embedded systems with edge computing in embedded systems and AI in embedded systems. Our expertise includes programming languages such as C, C++, Python, and Rust, running on FreeRTOS, Zephyr.":
+        "Maßgeschneiderte Embedded-Lösungen für industrielle Embedded-Systeme und automobile Embedded-Software, die die funktionale Sicherheit in Embedded-Systemen gewährleisten – mit Edge-Computing und KI in Embedded-Systemen. Unsere Expertise umfasst Programmiersprachen wie C, C++, Python und Rust, die auf FreeRTOS und Zephyr laufen.",
+      "Development of connected intelligent systems with IoT embedded solutions, edge computing, industrial IoT (IIoT), cloud integration, and communication protocols such as MQTT, BLE, Zigbee, CAN, UART, SPI, and I²C. We specialize in wireless sensor networks (WSN), AI-powered predictive maintenance, OPC UA, SCADA systems, remote monitoring, and FOTA updates.":
+        "Entwicklung vernetzter intelligenter Systeme mit IoT-Embedded-Lösungen, Edge-Computing, industriellem IoT (IIoT), Cloud-Integration und Kommunikationsprotokollen wie MQTT, BLE, Zigbee, CAN, UART, SPI und I²C. Wir sind spezialisiert auf drahtlose Sensornetzwerke (WSN), KI-gestützte prädiktive Wartung, OPC UA, SCADA-Systeme, Fernüberwachung und FOTA-Updates.",
+      "Securing embedded systems with secure boot, AES encryption, firmware over-the-air (FOTA) updates, embedded system security, hardware security modules (HSM), secure communication for IoT, PKI and digital certificates, and IoT device authentication to enhance system integrity and protection against cyber threats.":
+        "Sicherung eingebetteter Systeme mit Secure Boot, AES-Verschlüsselung, Firmware-Over-the-Air (FOTA)-Updates, Embedded-System-Sicherheit, Hardware Security Modules (HSM), sicherer Kommunikation für IoT, PKI und digitalen Zertifikaten sowie IoT-Geräteauthentifizierung zur Verbesserung der Systemintegrität und zum Schutz vor Cyberbedrohungen.",
+      "Development of ECUs, automotive lighting, automotive electronics, high-voltage battery storage, automobile electric services, and communication systems for automotive embedded software to enhance vehicle performance and safety. Using CAN, SPI, and I²C protocols.":
+        "Entwicklung von Steuergeräten (ECUs), automobilen Beleuchtungssystemen, Automobilelektronik, Hochvoltbatteriespeichern, elektrischen Fahrzeugsystemen und Kommunikationssystemen für automobile Embedded-Software zur Verbesserung der Fahrzeugleistung und Sicherheit. Verwendung von CAN-, SPI- und I²C-Protokollen.",
+      "Integrating AI development for real-time data analysis, automated decision-making, and machine learning in embedded systems to enhance predictive intelligence and smart automation. These solutions leverage ARM Cortex and Raspberry Pi hardware.":
+        "Integration der KI-Entwicklung für Echtzeit-Datenanalyse, automatisierte Entscheidungsfindung und maschinelles Lernen in eingebetteten Systemen zur Verbesserung der prädiktiven Intelligenz und intelligenten Automatisierung. Diese Lösungen nutzen ARM Cortex- und Raspberry Pi-Hardware.",
+      "High-quality electronics development, engineering services, and high-voltage battery storage solutions for circuit board design, PCB prototyping, and hardware manufacturing. We specialize in designing custom embedded solutions using STM32, ESP32, and Raspberry Pi.":
+        "Hochwertige Elektronikentwicklung, Engineering-Dienstleistungen und Hochvoltbatteriespeicherlösungen für Schaltungsdesign, PCB-Prototyping und Hardwarefertigung. Wir sind spezialisiert auf die Entwicklung maßgeschneiderter Embedded-Lösungen mit STM32, ESP32 und Raspberry Pi.",
+      "Hardware Design & PCB Prototyping": "Hardware-Design & PCB-Prototyping",
     },
   },
   en: {
@@ -1212,6 +1227,21 @@ const resources = {
       Marketing: "Marketing",
       "Refuse All": "Refuse All",
       "Accept Selection": "Accept Selection",
+
+      //Update-Services.
+      "Tailor-made embedded solutions for industrial embedded systems and automotive embedded software, ensuring functional safety in embedded systems with edge computing in embedded systems and AI in embedded systems. Our expertise includes programming languages such as C, C++, Python, and Rust, running on FreeRTOS, Zephyr.":
+        "Tailor-made embedded solutions for industrial embedded systems and automotive embedded software, ensuring functional safety in embedded systems with edge computing in embedded systems and AI in embedded systems. Our expertise includes programming languages such as C, C++, Python, and Rust, running on FreeRTOS, Zephyr.",
+      "Development of connected intelligent systems with IoT embedded solutions, edge computing, industrial IoT (IIoT), cloud integration, and communication protocols such as MQTT, BLE, Zigbee, CAN, UART, SPI, and I²C. We specialize in wireless sensor networks (WSN), AI-powered predictive maintenance, OPC UA, SCADA systems, remote monitoring, and FOTA updates.":
+        "Development of connected intelligent systems with IoT embedded solutions, edge computing, industrial IoT (IIoT), cloud integration, and communication protocols such as MQTT, BLE, Zigbee, CAN, UART, SPI, and I²C. We specialize in wireless sensor networks (WSN), AI-powered predictive maintenance, OPC UA, SCADA systems, remote monitoring, and FOTA updates.",
+      "Securing embedded systems with secure boot, AES encryption, firmware over-the-air (FOTA) updates, embedded system security, hardware security modules (HSM), secure communication for IoT, PKI and digital certificates, and IoT device authentication to enhance system integrity and protection against cyber threats.":
+        "Securing embedded systems with secure boot, AES encryption, firmware over-the-air (FOTA) updates, embedded system security, hardware security modules (HSM), secure communication for IoT, PKI and digital certificates, and IoT device authentication to enhance system integrity and protection against cyber threats.",
+      "Development of ECUs, automotive lighting, automotive electronics, high-voltage battery storage, automobile electric services, and communication systems for automotive embedded software to enhance vehicle performance and safety. Using CAN, SPI, and I²C protocols.":
+        "Development of ECUs, automotive lighting, automotive electronics, high-voltage battery storage, automobile electric services, and communication systems for automotive embedded software to enhance vehicle performance and safety. Using CAN, SPI, and I²C protocols.",
+      "Integrating AI development for real-time data analysis, automated decision-making, and machine learning in embedded systems to enhance predictive intelligence and smart automation. These solutions leverage ARM Cortex and Raspberry Pi hardware.":
+        "Integrating AI development for real-time data analysis, automated decision-making, and machine learning in embedded systems to enhance predictive intelligence and smart automation. These solutions leverage ARM Cortex and Raspberry Pi hardware.",
+      "High-quality electronics development, engineering services, and high-voltage battery storage solutions for circuit board design, PCB prototyping, and hardware manufacturing. We specialize in designing custom embedded solutions using STM32, ESP32, and Raspberry Pi.":
+        "High-quality electronics development, engineering services, and high-voltage battery storage solutions for circuit board design, PCB prototyping, and hardware manufacturing. We specialize in designing custom embedded solutions using STM32, ESP32, and Raspberry Pi.",
+      "Hardware Design & PCB Prototyping": "Hardware Design & PCB Prototyping",
     },
   },
 };

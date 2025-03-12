@@ -2,7 +2,7 @@
 .services {
   text-align: center;
   padding: 50px 5%;
-  background: #F4F4F4;
+  background: #f4f4f4;
   /* margin-top: 50px; */
 }
 
@@ -45,7 +45,7 @@
 /* Service Card */
 .service-card {
   background: white;
-  padding: 25px;  /* Increased padding for better spacing */
+  padding: 25px; /* Increased padding for better spacing */
   border-radius: 12px;
   /* border-radius: ; */
   text-align: left;
@@ -64,11 +64,20 @@
 
 /* Card Description */
 .service-card p {
-  margin-top: 10px;
-  font-size: 16px;
+  margin-top: 17px;
+  font-size: 0.88rem;
   text-align: left;
   color: #666;
   margin-bottom: 15px;
+  margin-top: 10px !important;
+  font-size: 0.88rem !important;
+  color: #555;
+  line-height: 1.4;
+  text-align: justify; /* Justify alignment */
+  /* text-align: justify; */
+  /* text-justify: inter-word; */
+  word-spacing: -2px;
+  /* margin-top: 30px; */
 }
 
 /* Learn More Button */
@@ -76,7 +85,7 @@
   font-size: 13px;
   font-weight: bold;
   text-align: left;
-  margin-left: -100px;
+  margin-left: -155px;
   color: #007bff;
   text-decoration: none;
   display: inline-block;
@@ -89,7 +98,7 @@
 
 /* Active Service Card (Default Blue Background) */
 .service-card.active {
-  background: #1E3A5F;
+  background: #1e3a5f;
   color: white;
 }
 
@@ -101,7 +110,7 @@
 
 /* 🔥 Hover Effect: Change background & text color */
 .service-card:hover {
-  background: #1E3A5F;
+  background: #1e3a5f;
   color: white;
   transform: translateY(-5px); /* Slight lift effect */
   box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
@@ -114,7 +123,7 @@
 }
 
 /* Responsive Design */
-/* 🖥️ Large Screens (Default - 4 Cards in a Row) */
+/* 🖥 Large Screens (Default - 4 Cards in a Row) */
 @media (max-width: 1024px) {
   .services-container {
     grid-template-columns: repeat(2, 1fr); /* Show 2 cards per row */
@@ -194,6 +203,3 @@
     font-size: 12px;
   }
 }
-
-
-

@@ -2,7 +2,7 @@
 .timeline {
   text-align: center;
   padding: 50px 5%;
-  background: #F4F4F4;
+  background: #f4f4f4;
   margin-top: 0px;
   /* width: 100%; */
 }
@@ -19,7 +19,7 @@
 
 .timeline-title {
   margin-top: 7px;
-  font-size: 2rem;
+  font-size: 2rem !important;
   font-weight: bold;
   color: #222;
 }
@@ -38,7 +38,7 @@
   width: 100%;
   /* height: auto; */
   /* align-items: center; */
-  /* justify-items: center; */
+  /* justify-items: center; */
 }
 
 /* Blue Timeline Line */
@@ -52,7 +52,7 @@
   background: #007bff;
   z-index: 1; /* Brings it above other elements */
   margin-top: 0px;
-  /* margin-bottom: 10px; */
+  /* margin-bottom: 10px; */
 }
 /* Small Vertical Markers on Timeline */
 .timeline-marker {
@@ -102,21 +102,21 @@
   .timeline-card.bottom {
     transform: translateY(20px);
     } */
-    
-    /* Number with Title */
-    .timeline-number {
-      font-size: 1.2rem;
-      font-weight: bold;
-      color: #007bff;
-      margin-bottom: 5px;
-    }
-    
-    .timeline-title{
-      font-size: 19px;
-      color: #222;
-      font-weight: bold;
-      margin-bottom: 20px;
-    }
+
+/* Number with Title */
+.timeline-number {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 5px;
+}
+
+.timeline-title {
+  font-size: 19px !important;
+  color: #222;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
 .timeline-number span {
   color: #222;
 }
@@ -126,12 +126,21 @@
   /* font-size: 1rem;
   color: #666;
   white-space: pre-line; Keeps text formatting */
-  margin-top: 10px;
+  margin-top: 19px;
   font-size: 16px;
   text-align: left;
   color: #666;
   margin-bottom: 15px;
   line-height: 20px;
+  margin-top: 10px !important;
+  font-size: 0.88rem !important;
+  color: #555;
+  line-height: 1.4;
+  text-align: justify; /* Justify alignment */
+  /* text-align: justify; */
+  text-justify: inter-word;
+
+  word-spacing: -2px;
 }
 
 /* Trophy Icon */
@@ -228,4 +237,3 @@
     display: none; /* Hide line and trophy on small screens */
   }
 }
-
