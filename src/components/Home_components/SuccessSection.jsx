@@ -31,18 +31,15 @@ const SuccessSection = () => {
 
     emailjs
       .send(
-        // eslint-disable-next-line no-irregular-whitespace
-        "service_y6zacem", // Your EmailJS Service ID
-        // eslint-disable-next-line no-irregular-whitespace
-        "template_ig2kqbj", // Your EmailJS Template ID
+        "service_y6zacem", // Your EmailJS Service ID
+        "template_ig2kqbj", // Your EmailJS Template ID
         templateParams,
-        // eslint-disable-next-line no-irregular-whitespace
-        "rBlvscRL_SXhmKHx2" // Your EmailJS Public Key
+        "rBlvscRL_SXhmKHx2" // Your EmailJS Public Key
       )
       .then(
         (result) => {
           console.log("Email sent:", result.text);
-          toast.success("✅Query Submitted Successfully");
+          toast.success("✅ Email sent Successfully!");
           setFormData({ name: "", email: "", message: "" }); // Clear form
         },
         (error) => {
@@ -90,7 +87,7 @@ const SuccessSection = () => {
       <div className="business-success">
         <h4>{t("OUR SUCCESS")}</h4>
         <h2>
-          {t("We have helped more than")} <br /> {t("50+ clients worldwide")}
+          {t("We have helped more than")} <br /> {t("700+ clients worldwide")}
         </h2>
         <p>
           {t(
@@ -119,7 +116,7 @@ const SuccessSection = () => {
           </div>
           <div className="stat-box">
             <div className="circle">95%</div>
-            <p>{t("Secure & Scalable Embedded Technologies.")}</p>
+            <p id="a-1">{t("Secure & Scalable Embedded Technologies.")}</p>
             <ToastContainer position="top-center" autoClose={3000} />
           </div>
         </div>
