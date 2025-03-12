@@ -598,6 +598,15 @@ const resources = {
       "Sypheon Online's team brought our vision to life with expertise in web-based multiplayer gaming and blockchain integration, ensuring smooth gameplay.":
         "Das Team von Sypheon Online hat unsere Vision mit Fachwissen in webbasiertem Multiplayer-Gaming und Blockchain-Integration zum Leben erweckt und ein reibungsloses Spielerlebnis sichergestellt.",
       "Product Owner": "Produktverantwortlicher",
+
+      //Cookies......
+      "We use cookies for better experience and analytics. Select your preferences:":
+        "Wir verwenden Cookies für ein besseres Erlebnis und Analysen. Wählen Sie Ihre Einstellungen:",
+      Preferences: "Präferenzen",
+      Statistics: "Statistiken  ",
+      Marketing: "Marketing",
+      "Refuse All": "Alle ablehnen",
+      "Accept Selection": "Auswahl akzeptieren",
     },
   },
   en: {
@@ -1194,6 +1203,15 @@ const resources = {
       "Sypheon Online's team brought our vision to life with expertise in web-based multiplayer gaming and blockchain integration, ensuring smooth gameplay.":
         "Sypheon Online's team brought our vision to life with expertise in web-based multiplayer gaming and blockchain integration, ensuring smooth gameplay.",
       "Product Owner": "Product Owner",
+
+      //Cookies......
+      "We use cookies for better experience and analytics. Select your preferences:":
+        "We use cookies for better experience and analytics. Select your preferences:",
+      Preferences: "Preferences",
+      Statistics: "Statistics",
+      Marketing: "Marketing",
+      "Refuse All": "Refuse All",
+      "Accept Selection": "Accept Selection",
     },
   },
 };

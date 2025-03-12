@@ -75,7 +75,7 @@ const ConsentBanner = () => {
             checked={consent.preferences}
             onChange={() => handleConsentChange("preferences")}
           />
-          <span>{"Preferences"}</span>
+          <span>{t("Preferences")}</span>
         </label>
         <label className="checkbox-label">
           <input
@@ -83,7 +83,7 @@ const ConsentBanner = () => {
             checked={consent.statistics}
             onChange={() => handleConsentChange("statistics")}
           />
-          <span>{"Statistics"}</span>
+          <span>{t("Statistics")}</span>
         </label>
         <label className="checkbox-label">
           <input
@@ -91,16 +91,16 @@ const ConsentBanner = () => {
             checked={consent.marketing}
             onChange={() => handleConsentChange("marketing")}
           />
-          <span>{"Marketing"}</span>
+          <span>{t("Marketing")}</span>
         </label>
       </div>
 
       <div className="button-container">
         <button onClick={handleRefuseAll} className="reject-button">
-          {"Refuse All"}
+          {t("Refuse All")}
         </button>
         <button onClick={handleAcceptSelection} className="accept-button">
-          {"Accept Selection"}
+          {t("Accept Selection")}
         </button>
       </div>
     </div>
