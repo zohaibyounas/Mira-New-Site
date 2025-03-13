@@ -30,8 +30,8 @@ const CookieBanner = () => {
         We use cookies to improve your experience. Accept or reject?
       </p> */}
       <div className="">
-        <button onClick={handleAccept} className=""></button>
-        <button onClick={handleReject} className=""></button>
+        {/* <button onClick={handleAccept} className=""></button>
+        <button onClick={handleReject} className=""></button> */}
       </div>
     </div>
   );
