@@ -39,7 +39,7 @@ const SuccessSection = () => {
       .then(
         (result) => {
           console.log("Email sent:", result.text);
-          toast.success("✅ Email sent Successfully!");
+          toast.success("✅ Query Submitted Successfully");
           setFormData({ name: "", email: "", message: "" }); // Clear form
         },
         (error) => {
@@ -87,7 +87,7 @@ const SuccessSection = () => {
       <div className="business-success">
         <h4>{t("OUR SUCCESS")}</h4>
         <h2>
-          {t("We have helped more than")} <br /> {t("700+ clients worldwide")}
+          {t("We have helped more than")} <br /> {t("50+ clients worldwide")}
         </h2>
         <p>
           {t(
