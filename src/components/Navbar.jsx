@@ -22,7 +22,6 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       {/* Logo */}
-
       <div className="logo">
         <Link to="/">
           <img src="/images/logo-1.png" alt="MIRA Tech" />
@@ -32,16 +31,16 @@ const Navbar = () => {
       {/* Navigation Links */}
       <ul className={`nav-links ${isOpen ? "open" : ""}`}>
         <li>
-          <a href="/">{t("Home")}</a>
+          <Link to="/">{t("Home")}</Link>
         </li>
         <li>
-          <a href="/about">{t("About us")}</a>
+          <Link to="/about">{t("About us")}</Link>
         </li>
         <li>
-          <a href="/services">{t("Services")}</a>
+          <Link to="/services">{t("Services")}</Link>
         </li>
         <li>
-          <a href="/contact">{t("Contact us")}</a>
+          <Link to="/contact">{t("Contact us")}</Link>
         </li>
       </ul>
 
@@ -53,7 +52,7 @@ const Navbar = () => {
           onClick={() => changeLanguage("de")}
         >
           DE
-        </span>{" "}
+        </span>
         |
         <span
           className={`lang ${i18n.language === "en" ? "active" : ""}`}
