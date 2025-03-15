@@ -47,13 +47,13 @@ const ContactForm = () => {
         },
         (error) => {
           console.error("Email send error:", error.text);
-          toast.error("❌ Failed to send message. Try again!");
+          toast.error(" Failed to send message. Try again!");
         }
       );
   };
 
   return (
-    <section className="contact-form-section">
+    <section className="contact-form-section main-bar">
       <h2 className="contact-title">{t("Let's start a project together")}</h2>
       <form className="contact-form" onSubmit={handleSubmit(onSubmit)}>
         <div className="form-group">
