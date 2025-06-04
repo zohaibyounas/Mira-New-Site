@@ -14,24 +14,39 @@ const AboutHero = () => {
           {t("About")} <span className="highlight">{t("Us")}</span>
         </h1>
         <h2>
-          {t("We Are A Cutting-Edge")} <span className="highlight">{t("Software Services")}</span> {t("Provider, Dedicated To")}
-          <span className="highlight"> {t("Developing")}</span> {t("Innovative Solutions")}
+          {t("We Are A Cutting-Edge")}{" "}
+          <span className="highlight">{t("Software Services")}</span>{" "}
+          {t("Provider, Dedicated To")}
+          <span className="highlight"> {t("Developing")}</span>{" "}
+          {t("Innovative Solutions")}
         </h2>
         <p>
-          {t("Since our inception, we have been committed to providing innovative software solutions tailored to your needs, driving growth, and enhancing user experiences. Our dedication to excellence is reflected in our evolving expertise and successful projects.")}
+          {t(
+            "Since our inception, we have been committed to providing innovative software solutions tailored to your needs, driving growth, and enhancing user experiences. Our dedication to excellence is reflected in our evolving expertise and successful projects."
+          )}
         </p>
         <button className="join-btn">
-          <a href="/contact" className="request-link">{t("Contact Us")}</a> <FaArrowRight />
+          <a href="/contact" className="request-link">
+            {t("Contact Us")}
+          </a>{" "}
+          <FaArrowRight />
         </button>
       </div>
 
-      {/* Right Side Images */}
       <div className="about-images">
         <div className="image-box blue-box">
-          <img src="/images/office-1.png" alt={t("Office Space")} className="about-img" />
+          <img
+            src="/images/office-1.png"
+            alt={t("Office Space")}
+            className="about-img"
+          />
         </div>
         <div className="image-box">
-          <img src="/images/office-2.png" alt={t("Team Work")} className="about-img" />
+          <img
+            src="/images/office-2.png"
+            alt={t("Team Work")}
+            className="about-img"
+          />
         </div>
       </div>
     </section>
